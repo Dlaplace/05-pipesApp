@@ -1,0 +1,25 @@
+<p-panel header="Pipes numericos" class="p1">
+  <p>Pipes incluidos en Angular de números</p>
+</p-panel>
+
+<div class="grid">
+
+  <div class="col-12 md:col-4">
+    <p-card header="ventas netas" subheader="del año">
+      {{ totalSales + 1235 | number:'1.2-2' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="ventas Brutas" subheader="del año">
+      {{ totalSales | currency:'HNL':'symbol-narrow': '1.2-4' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="ventas porcentual" subheader="del año">
+      {{ percentage | percent:'1.2-4' }}
+    </p-card>
+  </div>
+
+</div>
